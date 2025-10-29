@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-8">
       {/* WhatsApp Buttons */}
-      <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
+      <div className="flex flex-row justify-center gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-12">
         <button 
           onClick={handleCommunityClick}
           style={{ backgroundColor: '#41919C' }}

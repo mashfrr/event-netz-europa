@@ -41,13 +41,14 @@ const Navigation = () => {
       {/* Hero Section */}
       <div className="text-white py-3 md:py-4 rounded-2xl md:rounded-3xl mx-4 md:mx-8 mb-6 md:mb-8 relative overflow-hidden" style={{ backgroundColor: '#0F2D49', aspectRatio: '1 / 0.213' }}>
         <div className="w-full px-3 md:px-6 relative z-10 h-full">
-          <div className="flex items-center md:items-start justify-between h-full flex-col md:flex-row gap-2 md:gap-0">
-            <div className="flex items-center md:items-start h-full pt-2 pl-2 md:pl-4 w-full md:w-auto">
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">Event Netz Europa</h1>
+          <div className="flex items-center justify-between h-full flex-row">
+            {/* Title - Centered */}
+            <div className="flex-1 flex items-center justify-center h-full">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-center">Event Netz Europa</h1>
             </div>
             
-            {/* EU Logo */}
-            <div className="relative flex items-center md:items-start h-full pt-2 pr-2 md:pr-4">
+            {/* EU Logo - Right side */}
+            <div className="relative flex items-center h-full pt-2 pr-2 md:pr-4 flex-shrink-0">
               <img 
                 src={euLogo} 
                 alt="EU Logo with documents and stars" 
