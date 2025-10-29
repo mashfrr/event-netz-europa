@@ -34,6 +34,8 @@ const Events = () => {
       try {
         setLoading(true);
         const supabaseEvents = await SupabaseService.getEvents();
+        console.log('📊 Events fetched from SupabaseService:', supabaseEvents.length);
+        console.log('📋 Events data:', supabaseEvents);
         setEvents(supabaseEvents);
       } catch (error) {
         console.error('Failed to fetch events:', error);
@@ -181,45 +183,17 @@ const Events = () => {
   };
 
   const filteredEvents = events.filter(event => {
-    // Filter out events where registration deadline has passed
-    const today = new Date();
-    today.setHours(0, 0, 0, 0); // Set to start of day for accurate comparison
-    
-    if (event.registrationDeadline) {
-      const parseGermanDate = (dateStr: string) => {
-        // Handle dd.mm.yyyy format
-        if (dateStr.includes('.')) {
-          const parts = dateStr.split('.');
-          if (parts.length === 3) {
-            return new Date(`${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`);
-          }
-        }
-        // Handle German month names
-        return new Date(dateStr.replace(/(\d+)\. (\w+) (\d+)/, (_, day, month, year) => {
-          const months: { [key: string]: string } = {
-            'Jan': '01', 'Feb': '02', 'März': '03', 'Apr': '04', 'Mai': '05', 'Juni': '06',
-            'Juli': '07', 'Aug': '08', 'Sept': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
-          };
-          return `${year}-${months[month]}-${day.padStart(2, '0')}`;
-        }));
-      };
-      
-      const deadline = parseGermanDate(event.registrationDeadline);
-      deadline.setHours(23, 59, 59, 999); // Set to end of day for deadline comparison
-      
-      if (deadline < today) {
-        return false; // Skip events with passed registration deadline
-      }
-    }
+    // Note: Registration deadline filtering is already handled by SupabaseService.getEvents()
+    // which only returns approved events with valid registration deadlines
     
     const matchesSearch = event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         event.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         event.location.toLowerCase().includes(searchTerm.toLowerCase());
+                         (event.description && event.description.toLowerCase().includes(searchTerm.toLowerCase())) ||
+                         (event.location && event.location.toLowerCase().includes(searchTerm.toLowerCase()));
     const matchesTheme = selectedTheme.length === 0 || selectedTheme.includes(event.category);
     
     // Cost filter with price range
-    const eventCostValue = (!event.cost || event.cost === 'Kostenlos') ? 0 : 
-      parseInt(event.cost.replace(/[^\d]/g, '')) || 0;
+    const eventCostValue = (!event.cost || event.cost === 'Kostenlos' || event.cost === 'Preis auf Anfrage' || event.cost === 'null' || event.cost === 'undefined') ? 0 : 
+      parseInt(event.cost.toString().replace(/[^\d]/g, '')) || 0;
     const matchesCost = eventCostValue >= costRange[0] && eventCostValue <= costRange[1];
     
     // Location filter with radius support
@@ -248,33 +222,16 @@ const Events = () => {
       }
     }
     
-    // Reimbursement filter (assuming it's part of event data or cost info)
+    // Reimbursement filter using travel_reimbursement field
     const matchesReimbursement = reimbursement === 'all' || 
-      (reimbursement === 'yes' && event.cost?.includes('Erstattung')) ||
-      (reimbursement === 'no' && !event.cost?.includes('Erstattung'));
+      (reimbursement === 'yes' && (event.travelReimbursement === true || event.travelReimbursement === 'true' || event.cost?.includes('Erstattung'))) ||
+      (reimbursement === 'no' && (event.travelReimbursement === false || event.travelReimbursement === 'false' || (!event.cost?.includes('Erstattung') && !event.travelReimbursement)));
     
     // Date filter
     let matchesDate = true;
-    if (selectedDate && (selectedDate.from || selectedDate.to)) {
-      const parseGermanDate = (dateStr: string) => {
-        // Handle dd.mm.yyyy format
-        if (dateStr.includes('.')) {
-          const parts = dateStr.split('.');
-          if (parts.length === 3) {
-            return new Date(`${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`);
-          }
-        }
-        // Handle German month names  
-        return new Date(dateStr.replace(/(\d+)\. (\w+) (\d+)/, (_, day, month, year) => {
-          const months: { [key: string]: string } = {
-            'Jan': '01', 'Feb': '02', 'März': '03', 'Apr': '04', 'Mai': '05', 'Juni': '06',
-            'Juli': '07', 'Aug': '08', 'Sept': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
-          };
-          return `${year}-${months[month]}-${day.padStart(2, '0')}`;
-        }));
-      };
-      
-      const eventDate = parseGermanDate(event.date);
+    if (selectedDate && (selectedDate.from || selectedDate.to) && event.startTime) {
+      // Use startTime (which is start_date from database) for date filtering
+      const eventDate = new Date(event.startTime);
       
       if (selectedDate.from && selectedDate.to) {
         matchesDate = eventDate >= selectedDate.from && eventDate <= selectedDate.to;
@@ -288,25 +245,8 @@ const Events = () => {
     // Registration deadline filter
     let matchesRegistration = true;
     if (selectedRegistration && (selectedRegistration.from || selectedRegistration.to) && event.registrationDeadline) {
-      const parseGermanDate = (dateStr: string) => {
-        // Handle dd.mm.yyyy format
-        if (dateStr.includes('.')) {
-          const parts = dateStr.split('.');
-          if (parts.length === 3) {
-            return new Date(`${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`);
-          }
-        }
-        // Handle German month names
-        return new Date(dateStr.replace(/(\d+)\. (\w+) (\d+)/, (_, day, month, year) => {
-          const months: { [key: string]: string } = {
-            'Jan': '01', 'Feb': '02', 'März': '03', 'Apr': '04', 'Mai': '05', 'Juni': '06',
-            'Juli': '07', 'Aug': '08', 'Sept': '09', 'Okt': '10', 'Nov': '11', 'Dez': '12'
-          };
-          return `${year}-${months[month]}-${day.padStart(2, '0')}`;
-        }));
-      };
-      
-      const deadline = parseGermanDate(event.registrationDeadline);
+      // Use registrationDeadline directly (it's already in YYYY-MM-DD format from database)
+      const deadline = new Date(event.registrationDeadline);
       
       if (selectedRegistration.from && selectedRegistration.to) {
         matchesRegistration = deadline >= selectedRegistration.from && deadline <= selectedRegistration.to;
@@ -319,6 +259,10 @@ const Events = () => {
     
     return matchesSearch && matchesTheme && matchesCost && matchesLocation && matchesDate && matchesRegistration && matchesReimbursement;
   });
+
+  // Debug logging
+  console.log('🔍 Filtered events count:', filteredEvents.length);
+  console.log('📋 Filtered events:', filteredEvents);
 
   // Sort events
   const sortedEvents = [...filteredEvents].sort((a, b) => {
@@ -379,7 +323,7 @@ const Events = () => {
     <div className="min-h-screen bg-background">
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Page Title */}
-        <h1 className="text-2xl font-bold text-gray-900 mb-12">Events finden</h1>
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 md:mb-12">Events finden</h1>
 
         {/* Filter Bar */}
         <div className="flex flex-wrap items-center gap-3 md:gap-4 mb-4 md:mb-6">
@@ -401,7 +345,7 @@ const Events = () => {
                 <Button
                   variant="outline"
                   className={cn(
-                    "w-[160px] md:w-[220px] justify-start text-left font-normal text-sm text-black",
+                    "w-full sm:w-[160px] md:w-[220px] justify-start text-left font-normal text-sm text-black",
                     selectedTheme.length > 0 && "border-[#41919C] bg-[#41919C]/10"
                   )}
                 >
@@ -457,7 +401,7 @@ const Events = () => {
                 <Button
                   variant="outline"
                   className={cn(
-                    "w-[120px] md:w-[140px] justify-start text-left font-normal text-sm text-black",
+                    "w-full sm:w-[120px] md:w-[140px] justify-start text-left font-normal text-sm text-black",
                     (costRange[0] !== 0 || costRange[1] !== 500) && "border-[#41919C] bg-[#41919C]/10"
                   )}
                 >
@@ -611,7 +555,7 @@ const Events = () => {
           <div className="relative">
             <Select value={reimbursement} onValueChange={setReimbursement}>
               <SelectTrigger className={cn(
-                "w-[160px] md:w-[200px] text-sm text-black",
+                "w-full sm:w-[160px] md:w-[200px] text-sm text-black",
                 reimbursement !== "all" && "border-[#41919C] bg-[#41919C]/10"
               )}>
                 <SelectValue>
@@ -658,7 +602,7 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <span className="text-sm text-black">Sortieren nach:</span>
             <Select value={sortBy} onValueChange={setSortBy}>
-              <SelectTrigger className="w-[140px] md:w-[160px] text-sm text-black">
+              <SelectTrigger className="w-full sm:w-[140px] md:w-[160px] text-sm text-black">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -680,7 +624,7 @@ const Events = () => {
             <p className="text-muted-foreground text-lg">Events werden geladen...</p>
           </div>
         ) : (
-          <div id="event-list" className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          <div id="event-list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {sortedEvents.map((event) => (
               <EventCard 
                 key={event.id} 

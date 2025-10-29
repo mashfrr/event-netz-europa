@@ -7,10 +7,8 @@ import { SupabaseService } from "@/services/supabaseService";
 import { Event } from "@/lib/supabase";
 import { ImageGallery } from "@/components/ImageGallery";
 const categoryLabels = {
-  social: 'Soziales',
-  environment: 'Umwelt',
-  education: 'Bildung',
-  community: 'Gemeinschaft'
+  Education: 'Bildung',
+  Erasmus: 'Erasmus'
 };
 const EventDetail = () => {
   const { id } = useParams();
@@ -65,7 +63,7 @@ const EventDetail = () => {
   }
   return <div className="min-h-screen bg-background">
       {/* Header with Back Button */}
-      <div className="max-w-6xl mx-auto px-4 pt-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pt-6 sm:pt-8">
         <span 
           onClick={() => navigate('/events')} 
           className="mb-6 cursor-pointer flex items-center"
@@ -75,22 +73,28 @@ const EventDetail = () => {
         </span>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 pb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pb-8 sm:pb-12">
         {/* Event Title and Theme */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             {event.title}
           </h1>
           
-          <Badge className="bg-gray-100 text-gray-800 hover:bg-gray-100">
-            {categoryLabels[event.category]}
-          </Badge>
+          {event.categories && event.categories.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {event.categories.map((category, index) => (
+                <Badge key={index} className="bg-gray-100 text-gray-800 hover:bg-gray-100">
+                  {categoryLabels[category as keyof typeof categoryLabels] || category}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Event Images */}
         {event.images && event.images.length > 0 && (
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-3">Bilder</h3>
+            <h3 className="text-lg sm:text-xl font-semibold mb-3">Bilder</h3>
             <ImageGallery images={event.images} title={event.title} />
           </div>
         )}
@@ -98,13 +102,13 @@ const EventDetail = () => {
         {/* Description first */}
         {event.description && (
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-3">Beschreibung</h3>
-            <p className="text-gray-700 leading-relaxed">{event.description}</p>
+            <h3 className="text-lg sm:text-xl font-semibold mb-3">Beschreibung</h3>
+            <p className="text-gray-700 leading-relaxed max-w-none sm:max-w-3xl">{event.description}</p>
           </div>
         )}
 
         {/* Event Details with Emojis */}
-        <div className="space-y-4 text-lg">
+        <div className="space-y-4 text-base sm:text-lg">
           {/* Date Range (Anfang - Ende) */}
           {event.date && (
             <div className="flex items-start">
@@ -133,14 +137,18 @@ const EventDetail = () => {
             </div>
           )}
 
-          {/* Category */}
-          <div className="flex items-start">
-            <span className="text-2xl mr-3">🎯</span>
-            <div>
-              <span className="font-semibold">Kategorie: </span>
-              <span className="text-gray-700">{categoryLabels[event.category]}</span>
+          {/* Categories */}
+          {event.categories && event.categories.length > 0 && (
+            <div className="flex items-start">
+              <span className="text-2xl mr-3">🎯</span>
+              <div>
+                <span className="font-semibold">Kategorien: </span>
+                <span className="text-gray-700">
+                  {event.categories.join(', ')}
+                </span>
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Cost */}
           {event.cost && (
@@ -159,7 +167,11 @@ const EventDetail = () => {
               <span className="text-2xl mr-3">🚗</span>
               <div>
                 <span className="font-semibold">Reisekostenerstattung: </span>
-                <span className="text-gray-700">{event.travelReimbursement}</span>
+                <span className="text-gray-700">
+                  {typeof event.travelReimbursement === 'boolean' 
+                    ? (event.travelReimbursement ? 'Ja' : 'Nein')
+                    : event.travelReimbursement}
+                </span>
               </div>
             </div>
           )}

@@ -24,6 +24,7 @@ CREATE TABLE events (
   end_time TEXT,
   travel_reimbursement TEXT,
   status TEXT CHECK (status IN ('approved', 'pending', 'draft')) DEFAULT 'pending',
+  monday_id TEXT, -- Reference to Monday.com item ID
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
