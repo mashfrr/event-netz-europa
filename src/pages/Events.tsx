@@ -332,7 +332,7 @@ const Events = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
             <Input
               placeholder="Suche"
-              className="pl-10 text-black placeholder:text-black"
+              className="pl-10 text-black placeholder:text-black rounded-lg"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -345,7 +345,7 @@ const Events = () => {
                 <Button
                   variant="outline"
                   className={cn(
-                    "w-full sm:w-[160px] md:w-[220px] justify-start text-left font-normal text-sm text-black",
+                    "w-full sm:w-[160px] md:w-[220px] justify-start text-left font-normal text-sm text-black rounded-lg",
                     selectedTheme.length > 0 && "border-[#41919C] bg-[#41919C]/10"
                   )}
                 >
@@ -401,7 +401,7 @@ const Events = () => {
                 <Button
                   variant="outline"
                   className={cn(
-                    "w-full sm:w-[120px] md:w-[140px] justify-start text-left font-normal text-sm text-black",
+                    "w-full sm:w-[120px] md:w-[140px] justify-start text-left font-normal text-sm text-black rounded-lg",
                     (costRange[0] !== 0 || costRange[1] !== 500) && "border-[#41919C] bg-[#41919C]/10"
                   )}
                 >
@@ -446,7 +446,7 @@ const Events = () => {
                 <Button
                   variant="outline"
                   className={cn(
-                    "justify-start text-left font-normal text-sm min-w-[120px] md:min-w-[140px] text-black",
+                    "justify-start text-left font-normal text-sm min-w-[120px] md:min-w-[140px] text-black rounded-lg",
                     selectedDate && (selectedDate.from || selectedDate.to) && "border-[#41919C] bg-[#41919C]/10",
                     selectedDate?.from && selectedDate?.to && "min-w-[160px] md:min-w-[200px]"
                   )}
@@ -508,7 +508,7 @@ const Events = () => {
                 <Button
                   variant="outline"
                   className={cn(
-                    "justify-start text-left font-normal text-sm min-w-[130px] md:min-w-[160px] text-black",
+                    "justify-start text-left font-normal text-sm min-w-[130px] md:min-w-[160px] text-black rounded-lg",
                     selectedRegistration && (selectedRegistration.from || selectedRegistration.to) && "border-[#41919C] bg-[#41919C]/10",
                     selectedRegistration?.from && selectedRegistration?.to && "min-w-[180px] md:min-w-[220px]"
                   )}
@@ -555,7 +555,7 @@ const Events = () => {
           <div className="relative">
             <Select value={reimbursement} onValueChange={setReimbursement}>
               <SelectTrigger className={cn(
-                "w-full sm:w-[160px] md:w-[200px] text-sm text-black",
+                "w-full sm:w-[160px] md:w-[200px] text-sm text-black rounded-lg",
                 reimbursement !== "all" && "border-[#41919C] bg-[#41919C]/10"
               )}>
                 <SelectValue>
@@ -602,7 +602,7 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <span className="text-sm text-black">Sortieren nach:</span>
             <Select value={sortBy} onValueChange={setSortBy}>
-              <SelectTrigger className="w-full sm:w-[140px] md:w-[160px] text-sm text-black">
+              <SelectTrigger className="w-full sm:w-[140px] md:w-[160px] text-sm text-black rounded-lg">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -638,7 +638,7 @@ const Events = () => {
 
         {sortedEvents.length === 0 && !loading && (
           <div className="text-center py-12">
-            <p className="text-muted-foreground text-lg">
+            <p className="prose prose-sm sm:prose-base text-gray-700 leading-relaxed max-w-none">
               Keine Events gefunden. Versuche andere Suchbegriffe!
             </p>
           </div>

@@ -32,18 +32,18 @@ const AboutUs = () => {
       <section className="mb-8 sm:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Über uns</h2>
         <div className="prose prose-sm sm:prose-base max-w-none text-gray-700 leading-relaxed space-y-3 sm:space-y-4">
-          <p className="max-w-none sm:max-w-3xl">
+          <p className="max-w-none">
             Wir möchten den Zugang zu Bildungsveranstaltungen und Beteiligungsmöglichkeiten für junge Menschen und Fachkräfte 
             durch Engagement in der Jugendarbeit vereinfachen. Somit unterstützen wir unseren Vereinsauftrag zur Bekämpfung der 
             Ungleichheit in diesem Bereich.
           </p>
-          <p className="max-w-none sm:max-w-3xl">
+          <p className="max-w-none">
             Die Veranstaltungen für Event Netz Europa werden von einem Redaktionsteam recherchiert und aufbereitet. Unabhängig 
             davon, ob wir bei Event über die Teilnahme in Datenbankern sind Sachzusammenhang über dabei über Redaktionen und 
             sozialen Medien informiert werden möchten. Zusätzlich können die bei Interesse die Werbematerialien über unsere 
             Teilnehmerkanäle unabhängig von persönlichen Einstimmung.
           </p>
-          <p className="max-w-none sm:max-w-3xl">
+          <p className="max-w-none">
             Träger der Plattform ist der Verein für die vernetzte Gesellschaft. Wenn du mehr über unsere Arbeit erfahren möchtest, kannst 
             <span 
               onClick={() => window.open("https://www.vernetzte-gesellschaft.org", "_blank")}
@@ -58,7 +58,7 @@ const AboutUs = () => {
       <section className="mb-8 sm:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Unsere Mission</h2>
         <div className="prose prose-sm sm:prose-base max-w-none text-gray-700 leading-relaxed">
-          <p className="max-w-none sm:max-w-3xl">
+          <p className="max-w-none">
             Wir sehen ein Europa, in dem jeder junge Mensch die gleichen Chancen auf Bildung, Engagement und Weiterentwicklung hat. 
             Viele Jugendliche haben auf dem Veranstaltungsmarkt, sei es in clubs, einem offenen oder, so richtig, andere nicht die 
             Möglichkeit allein teilzunehmen, sich über Event Netz Europa schaffen wir Transparenz. Zugang sind ein lokales Netzwerk, in dem junge Menschen die Zukunft aktiv 
@@ -177,11 +177,9 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Sommer 2025 - Skalierung */}
+            {/* Skalierung - No date */}
             <div className="relative flex items-start">
-              <div className="relative z-10 flex items-center justify-center w-16 sm:w-20 md:w-24 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
-                <div className="text-black font-bold text-xs sm:text-sm whitespace-nowrap">Sommer 2025</div>
-              </div>
+              <div className="w-12 sm:w-14 md:w-16 flex-shrink-0"></div>
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🎯 Skalierung des Projekts</h3>
@@ -225,7 +223,7 @@ const AboutUs = () => {
             <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
               <span className="text-gray-500 text-sm">Foto</span>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Vorname Nachname</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Karl Grotheer</h3>
             <p className="text-sm text-gray-600">
               Kurze Beschreibung der Person und ihrer Rolle im Team.
             </p>
@@ -236,7 +234,7 @@ const AboutUs = () => {
             <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
               <span className="text-gray-500 text-sm">Foto</span>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Vorname Nachname</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Jakob Steinborn</h3>
             <p className="text-sm text-gray-600">
               Kurze Beschreibung der Person und ihrer Rolle im Team.
             </p>
@@ -244,10 +242,14 @@ const AboutUs = () => {
 
           {/* Team Member 3 */}
           <div className="text-center">
-            <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
-              <span className="text-gray-500 text-sm">Foto</span>
+            <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+              <img 
+                src="/Maria Frolovskaya.jpg" 
+                alt="Maria Frolovskaya" 
+                className="w-full h-full object-cover"
+              />
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Vorname Nachname</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Maria Frolovskaya</h3>
             <p className="text-sm text-gray-600">
               Kurze Beschreibung der Person und ihrer Rolle im Team.
             </p>
@@ -258,7 +260,7 @@ const AboutUs = () => {
             <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
               <span className="text-gray-500 text-sm">Foto</span>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Vorname Nachname</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Amira Benkhedda</h3>
             <p className="text-sm text-gray-600">
               Kurze Beschreibung der Person und ihrer Rolle im Team.
             </p>

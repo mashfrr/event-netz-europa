@@ -126,4 +126,15 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Hero banner responsive aspect ratio */
+.hero-banner-mobile {
+  aspect-ratio: 1323 / 324;
+}
+
+@media (min-width: 768px) {
+  .hero-banner-mobile {
+    aspect-ratio: 1 / 0.213 !important;
+  }
 }/* Cache buster Sat Sep 20 12:56:12 CEST 2025 */

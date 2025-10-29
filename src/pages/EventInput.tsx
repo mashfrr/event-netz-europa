@@ -14,11 +14,11 @@ const EventInput = () => {
             Teile dein Event mit der Community
           </h1>
           
-          <div className="space-y-4 text-black text-lg leading-relaxed">
-            <p>
+          <div className="prose prose-sm sm:prose-base max-w-none text-gray-700 leading-relaxed space-y-3 sm:space-y-4">
+            <p className="max-w-none">
               Kennst du ein spannendes Event, das für die Community interessant wäre, aber noch nicht veröffentlicht wurde?
             </p>
-            <p>
+            <p className="max-w-none">
               Fülle einfach das Formular aus – es wird direkt an unser Team weitergeleitet und nach einer kurzen Prüfung veröffentlicht.
             </p>
           </div>
