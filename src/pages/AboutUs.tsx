@@ -238,13 +238,24 @@ const AboutUs = () => {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
-              <a
-                href="mailto:karl.grotheer@netges.org"
-                className="text-gray-600 hover:text-[#41919C] transition-colors"
-                aria-label="Email an Karl Grotheer senden"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button
+                    className="text-gray-600 hover:text-[#41919C] transition-colors"
+                    aria-label="Email anzeigen"
+                  >
+                    <Mail className="h-5 w-5" />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-3">
+                  <a 
+                    href="mailto:karl.grotheer@netges.org"
+                    className="text-sm font-medium hover:text-[#41919C] transition-colors"
+                  >
+                    karl.grotheer@netges.org
+                  </a>
+                </PopoverContent>
+              </Popover>
               <Popover>
                 <PopoverTrigger asChild>
                   <button
@@ -255,7 +266,12 @@ const AboutUs = () => {
                   </button>
                 </PopoverTrigger>
                 <PopoverContent className="w-auto p-3">
-                  <p className="text-sm font-medium">+49 151 70895458</p>
+                  <a 
+                    href="tel:+4915170895458"
+                    className="text-sm font-medium hover:text-[#41919C] transition-colors"
+                  >
+                    +49 1517 0895458
+                  </a>
                 </PopoverContent>
               </Popover>
             </div>
@@ -294,13 +310,24 @@ const AboutUs = () => {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
-              <a
-                href="mailto:jakob.steinborn@netges.org"
-                className="text-gray-600 hover:text-[#41919C] transition-colors"
-                aria-label="Email an Jakob Steinborn senden"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button
+                    className="text-gray-600 hover:text-[#41919C] transition-colors"
+                    aria-label="Email anzeigen"
+                  >
+                    <Mail className="h-5 w-5" />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-3">
+                  <a 
+                    href="mailto:jakob.steinborn@netges.org"
+                    className="text-sm font-medium hover:text-[#41919C] transition-colors"
+                  >
+                    jakob.steinborn@netges.org
+                  </a>
+                </PopoverContent>
+              </Popover>
             </div>
             <p className="text-sm text-gray-600">
               20 Jahre alt, studiert in Leipzig.
@@ -336,13 +363,24 @@ const AboutUs = () => {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
-              <a
-                href="mailto:maria.frolovskaya@netges.org"
-                className="text-gray-600 hover:text-[#41919C] transition-colors"
-                aria-label="Email an Maria Frolovskaya senden"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button
+                    className="text-gray-600 hover:text-[#41919C] transition-colors"
+                    aria-label="Email anzeigen"
+                  >
+                    <Mail className="h-5 w-5" />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-3">
+                  <a 
+                    href="mailto:maria.frolovskaya@netges.org"
+                    className="text-sm font-medium hover:text-[#41919C] transition-colors"
+                  >
+                    maria.frolovskaya@netges.org
+                  </a>
+                </PopoverContent>
+              </Popover>
             </div>
             <p className="text-sm text-gray-600">
               19 Jahre alt, Abitur 2026 in München. Seit Januar 2025: IT, Aufbau und Betreuung der Web-Plattform, Recherche von Veranstaltungen, Öffentlichkeitsarbeit und LinkedIn.
@@ -373,13 +411,24 @@ const AboutUs = () => {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
-              <a
-                href="mailto:amira.benkhedda@netges.org"
-                className="text-gray-600 hover:text-[#41919C] transition-colors"
-                aria-label="Email an Amira Benkhedda senden"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button
+                    className="text-gray-600 hover:text-[#41919C] transition-colors"
+                    aria-label="Email anzeigen"
+                  >
+                    <Mail className="h-5 w-5" />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-3">
+                  <a 
+                    href="mailto:amira.benkhedda@netges.org"
+                    className="text-sm font-medium hover:text-[#41919C] transition-colors"
+                  >
+                    amira.benkhedda@netges.org
+                  </a>
+                </PopoverContent>
+              </Popover>
             </div>
             <p className="text-sm text-gray-600">
               Kurze Beschreibung der Person und ihrer Rolle im Team.

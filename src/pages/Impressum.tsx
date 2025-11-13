@@ -71,7 +71,7 @@ const Impressum = () => {
                 <p>26131 Oldenburg</p>
                 <br />
                 <p>E-Mail: <a href="mailto:karl.grotheer@netges.org" className="text-primary hover:underline">karl.grotheer@netges.org</a></p>
-                <p>Mobil: <a href="tel:+4915170895458" className="text-primary hover:underline">+49 151 70895458</a></p>
+                <p>Mobil: <a href="tel:+4915170895458" className="text-primary hover:underline">+49 1517 0895458</a></p>
               </div>
             </section>
           </div>
