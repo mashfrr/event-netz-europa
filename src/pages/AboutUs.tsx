@@ -275,9 +275,10 @@ const AboutUs = () => {
                 </PopoverContent>
               </Popover>
             </div>
-            <p className="text-sm text-gray-600">
-              24 Jahre alt, arbeitet bundesweit als Projektmanager. Mitgründer des Projekts und zuständig für die Projektkoordination, die Recherche von Veranstaltungen und die Betreuung von Kooperationen.
-            </p>
+            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+              <li>24 Jahre alt, bundesweiter Projektmanager.</li>
+              <li>Mitgründer des Projekts und verantwortlich für die Gesamtkoordination. Zuständig für die Planung und Abstimmung aller Projektprozesse, die Recherche relevanter Veranstaltungen sowie für den Aufbau und die Pflege von Kooperationen.</li>
+            </ul>
           </div>
 
           {/* Team Member 2 */}
@@ -328,11 +329,29 @@ const AboutUs = () => {
                   </a>
                 </PopoverContent>
               </Popover>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button
+                    className="text-gray-600 hover:text-[#41919C] transition-colors"
+                    aria-label="Telefonnummer anzeigen"
+                  >
+                    <Phone className="h-5 w-5" />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-3">
+                  <a 
+                    href="tel:+491637642554"
+                    className="text-sm font-medium hover:text-[#41919C] transition-colors"
+                  >
+                    +49 163 7642554
+                  </a>
+                </PopoverContent>
+              </Popover>
             </div>
-            <p className="text-sm text-gray-600">
-              20 Jahre alt, studiert in Leipzig.
-              Seit Januar 2025 Betreuung der WhatsApp-Community sowie Öffentlichkeitsarbeit und Kommunikation mit Teilnehmenden und Veranstaltenden.
-            </p>
+            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+              <li>20 Jahre alt, Student in Leipzig.</li>
+              <li>Seit Januar 2025 verantwortlich für die Betreuung der WhatsApp-Community, die Öffentlichkeitsarbeit sowie die Kommunikation mit Teilnehmenden und Veranstaltenden.</li>
+            </ul>
           </div>
 
           {/* Team Member 3 */}
@@ -382,9 +401,10 @@ const AboutUs = () => {
                 </PopoverContent>
               </Popover>
             </div>
-            <p className="text-sm text-gray-600">
-              19 Jahre alt, Abitur 2026 in München. Seit Januar 2025: IT, Aufbau und Betreuung der Web-Plattform, Recherche von Veranstaltungen, Öffentlichkeitsarbeit und LinkedIn.
-            </p>
+            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+              <li>19 Jahre alt, Abitur in München.</li>
+              <li>Seit Januar 2025 verantwortlich für die IT sowie den Aufbau und die Betreuung der Web-Plattform. Zuständig für die Recherche von Veranstaltungen sowie für die Öffentlichkeitsarbeit.</li>
+            </ul>
           </div>
 
           {/* Team Member 4 */}
@@ -440,8 +460,27 @@ const AboutUs = () => {
       {/* Partners Section */}
       <section className="mb-8 sm:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Unsere Partner</h2>
-        <div className="flex flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 flex-wrap">
-          {/* Partner 1 - TEILHABER IM Netzwerk */}
+        <div className="flex flex-row justify-start items-center gap-4 sm:gap-6 md:gap-8 flex-wrap">
+          {/* Partner 1 - DSEE */}
+          <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
+            <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
+              <img 
+                src="/2023_DSEE_Logo_3zlg_RGB_Basis_580x180.png" 
+                alt="DSEE Logo" 
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+            <a 
+              href="https://www.deutsche-stiftung-engagement-und-ehrenamt.de" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
+            >
+              DSEE
+            </a>
+          </div>
+
+          {/* Partner 2 - TEILHABER IM Netzwerk */}
           <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
             <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
               <img 
@@ -460,7 +499,7 @@ const AboutUs = () => {
             </a>
           </div>
 
-          {/* Partner 2 - Umsetzungspartner Update Deutschland */}
+          {/* Partner 3 - Umsetzungspartner Update Deutschland */}
           <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
             <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
               <img 
@@ -479,7 +518,7 @@ const AboutUs = () => {
             </a>
           </div>
 
-          {/* Partner 3 - NIEDERSACHSEN HÄLT ZUSAMMEN */}
+          {/* Partner 4 - NIEDERSACHSEN HÄLT ZUSAMMEN */}
           <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
             <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
               <img 
@@ -498,7 +537,7 @@ const AboutUs = () => {
             </a>
           </div>
 
-          {/* Partner 4 - Meet and Code */}
+          {/* Partner 5 - Meet and Code */}
           <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
             <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
               <img 
@@ -514,25 +553,6 @@ const AboutUs = () => {
               className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
             >
               Meet and Code
-            </a>
-          </div>
-
-          {/* Partner 5 - DSEE */}
-          <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
-            <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
-              <img 
-                src="/2023_DSEE_Logo_3zlg_RGB_Basis_580x180.png" 
-                alt="DSEE Logo" 
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            <a 
-              href="https://www.deutsche-stiftung-engagement-und-ehrenamt.de" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
-            >
-              DSEE
             </a>
           </div>
         </div>
