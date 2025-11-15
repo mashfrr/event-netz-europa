@@ -5,7 +5,7 @@ const Mitwirken = () => {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Ambassador Programm</h2>
-        <div className="prose text-gray-700 leading-relaxed space-y-4">
+        <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
           <p>
             Du engagierst dich ehrenamtlich, besuchst regelmäßig Jugendveranstaltungen und Workshops und bist bereits Teil unserer Eventnetz Europa Community? Werde offizieller Ambassador:in unseres Netzwerks!
           </p>
@@ -14,7 +14,7 @@ const Mitwirken = () => {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Was sind meine Aufgaben?</h2>
-        <div className="prose text-gray-700 leading-relaxed">
+        <div className="prose text-gray-700 leading-relaxed text-justify">
           <p>
             Als Ambassador*in vertrittst du Eventnetz Europa auf Veranstaltungen, informierst über unsere Community und begeisterst neue Mitglieder. Du stärkst unsere Reichweite und hilfst dabei, junge Menschen europaweit miteinander zu vernetzen. Außerdem kannst du eigene Ideen einbringen und aktiv bei der Weiterentwicklung unseres Netzwerks mitwirken.
           </p>
@@ -23,7 +23,7 @@ const Mitwirken = () => {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Wie trage ich damit zur Gesellschaft bei?</h2>
-        <div className="prose text-gray-700 leading-relaxed space-y-4">
+        <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
           <p>
             Mit deinem Engagement förderst du europäische Vernetzung, Jugendbeteiligung und gesellschaftlichen Zusammenhalt.
           </p>
@@ -38,11 +38,11 @@ const Mitwirken = () => {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Was sind meine Vorteile?</h2>
-        <div className="prose text-gray-700 leading-relaxed">
+        <div className="prose text-gray-700 leading-relaxed text-justify">
           <p>
             Als Ambassador*in profitierst du von exklusiven Vorteilen:
           </p>
-          <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
+          <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4 text-justify">
             <li>Zugang zu besonderen Events und internen Netzwerktreffen</li>
             <li>Möglichkeit, eigene Projekte vorzustellen und Unterstützung zu erhalten</li>
             <li>Persönliche Weiterentwicklung durch öffentliche Auftritte und Networking</li>
@@ -53,7 +53,7 @@ const Mitwirken = () => {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Wie werde ich vorbereitet?</h2>
-        <div className="prose text-gray-700 leading-relaxed space-y-4">
+        <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
           <p>
             Du erhältst eine individuelle Einführung und wirst bei Bedarf bei der Planung deiner Einsätze unterstützt.
           </p>
@@ -65,7 +65,7 @@ const Mitwirken = () => {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Wie kann ich mitmachen?</h2>
-        <div className="prose text-gray-700 leading-relaxed space-y-4">
+        <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
           <p>
             Wenn du Lust hast, Teil dieses einzigartigen Programms zu werden, melde dich einfach bei uns.
           </p>

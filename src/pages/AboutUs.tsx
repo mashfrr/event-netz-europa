@@ -88,7 +88,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Chat-Gruppe mit Veranstaltungstipps entsteht</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Von mehreren jungen Menschen, die sich über Veranstaltungen wie die 
                     JugendPolitikTage kennengelernt haben, wird eine einfache WhatsApp-
                     Gruppe mit dem Titel "Veranstaltungstipps" gegründet. Zu diesem 
@@ -106,7 +106,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">⚡ Professionalisierung</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Aus der mittlerweile auf mehrere hundert Mitglieder angewachsenen Gruppe findet sich erstmals ein Redaktionsteam zusammen, das mit der Unterstützung einer bundesweit tätigen Stiftung passende Veranstaltungen recherchiert und weitere Social-Media-Kanäle aufbaut.
                   </p>
                 </div>
@@ -121,7 +121,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🌟 Marke "Event Netz Europa" entsteht</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Parallel zu der bestehenden Veranstaltungstipps-Community entwickeln Jannik und Karl, die mit anderen Engagierten den umgedacht e. V. (auch bekannt als Zentrum für soziale Innovation - kurz "ZFSI") gegründet haben, eine Website mit dem Titel "Event Netz Europa" und die dazugehörige Social-Media-Community. Neben nationalen Angeboten werden hier insbesondere internationale Projekte geteilt.
                   </p>
                 </div>
@@ -136,7 +136,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🏛️ Wechsel des Trägervereins</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Während der umgedacht e. V. sich mittlerweile mehr auf <a href="https://nein-zur-digitalen-gewalt.de" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Präventionsworkshops an Schulen</a> fokussiert, gründen einige Mitglieder den <a href="https://netges.org" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Verein für die vernetzte Gesellschaft e. V.</a> - abgekürzt "NetGes", um sich auf die strukturelle Unterstützung von Jugendengagement zu fokussieren. Der neu gegründete Verein übernimmt kurz darauf die Communities "Event Netz Europa" und "Veranstaltungstipps" und führt sie in einem Projekt zusammen.
                   </p>
                 </div>
@@ -151,7 +151,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">📈 Wachstum und Präsenz auf Events</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Während das Projektteam von NetGes mit personellen Engpässen zu kämpfen hat und die Zahl der geteilten Angebote zeitweise sinkt, wächst das Interesse an dem Projekt und die Mitgliederzahl stetig. In Zusammenarbeit mit verschiedenen Organisationen wie dem Jugendmultiplikatoren-Team für den EU-Jugenddialog beim Deutschen Bundesjugendring wird die Präsenz auf regionalen und nationalen Veranstaltungen verstärkt, um mehr junge Menschen außerhalb der bestehenden Bubble zu erreichen.
                   </p>
                 </div>
@@ -166,7 +166,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">👥 Neues Team findet sich zusammen</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Auf der Veranstaltung "<a href="https://gennow.de/gesellschaft/change-youth-empowerment-hub/" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Change! Youth Empowerment Hub</a>" in Berlin, die vom <a href="https://gennow.de/" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Projekt "gen now" der Bertelsmann Stiftung</a> in Kooperation mit dem <a href="https://peerleader.org/" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Peer-Leader-International e. V.</a> organisiert wird, trifft Karl vom NetGes e. V. auf Maria, Amira und Jakob, die bereits überlegt hatten, eine ähnliche Plattform neu aufzubauen. Kurz darauf treffen sie sich digital noch einmal und planen zusammen den Ausbau der Community.
                   </p>
                 </div>
@@ -181,7 +181,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🎯 Skalierung des Projekts</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Mittlerweile ist die Community auf mehr als 2000 Mitglieder gewachsen. Die Zahl der Angebote steigt immer weiter und zahlreiche Träger schicken ihre Ausschreibungen direkt an das Redaktionsteam, um Teilnehmende für ihre Projekte zu gewinnen.
                   </p>
                 </div>
@@ -196,7 +196,7 @@ const AboutUs = () => {
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Weiterentwicklung der Formate und Ausbau der Präsenz auf Events</h3>
-                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
+                  <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Um die Bekanntheit des Projekts zu stärken, arbeitet das Projektteam an einer stärkeren Präsenz auf Events in Form von eigenen Infoständen und Workshops. Parallel wird an der Website und den verschiedenen Social-Media-Kanälen gefeilt, um diese übersichtlicher und attraktiver zu machen.
                   </p>
                 </div>
@@ -275,7 +275,7 @@ const AboutUs = () => {
                 </PopoverContent>
               </Popover>
             </div>
-            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+            <ul className="text-sm text-gray-600 text-justify list-disc list-inside space-y-1">
               <li>24 Jahre alt, arbeitet bundesweit als Projektmanager.</li>
               <li>Mitgründer des Projekts und zuständig für die Projektkoordination, die Recherche von Veranstaltungen und die Betreuung von Kooperationen.</li>
             </ul>
@@ -329,7 +329,7 @@ const AboutUs = () => {
                 </PopoverContent>
               </Popover>
             </div>
-            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+            <ul className="text-sm text-gray-600 text-justify list-disc list-inside space-y-1">
               <li>20 Jahre alt, studiert in Leipzig.</li>
               <li>Seit Januar 2025 zuständig für die Betreuung der WhatsApp-Community, die Öffentlichkeitsarbeit sowie die Kommunikation mit Teilnehmenden und Veranstaltenden.</li>
             </ul>
@@ -382,7 +382,7 @@ const AboutUs = () => {
                 </PopoverContent>
               </Popover>
             </div>
-            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+            <ul className="text-sm text-gray-600 text-justify list-disc list-inside space-y-1">
               <li>19 Jahre alt, macht Abitur 2026 in München.</li>
               <li>Seit Januar 2025 zuständig für den Aufbau der Web-Plattform, die Recherche von Veranstaltungen sowie für die Öffentlichkeitsarbeit.</li>
             </ul>
@@ -435,7 +435,7 @@ const AboutUs = () => {
                 </PopoverContent>
               </Popover>
             </div>
-            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+            <ul className="text-sm text-gray-600 text-justify list-disc list-inside space-y-1">
               <li>19 Jahre alt, macht Abitur 2026 in Rheinland-Pfalz.</li>
               <li>Seit Januar 2025 zuständig für das Social-Media-Marketing.</li>
             </ul>
@@ -446,14 +446,14 @@ const AboutUs = () => {
       {/* Partners Section */}
       <section className="mb-8 sm:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Unsere Partner</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center sm:justify-items-start">
           {/* Partner 1 - NSB */}
-          <div className="flex flex-col items-start justify-center">
+          <div className="flex flex-col items-center sm:items-start justify-center">
             <a 
               href="https://www.netzwerk-stiftungen-bildung.de" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-start hover:opacity-80 transition-opacity"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center sm:justify-start hover:opacity-80 transition-opacity"
             >
               <img 
                 src="/NSB.png" 
@@ -496,12 +496,12 @@ const AboutUs = () => {
           </div>
 
           {/* Partner 4 - Update Deutschland */}
-          <div className="flex flex-col items-start justify-center md:col-start-1">
+          <div className="flex flex-col items-center sm:items-start justify-center md:col-start-1">
             <a 
               href="https://www.update-deutschland.de" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-start hover:opacity-80 transition-opacity"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center sm:justify-start hover:opacity-80 transition-opacity"
             >
               <img 
                 src="/Update.png" 

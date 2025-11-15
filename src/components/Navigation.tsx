@@ -57,7 +57,7 @@ const Navigation = () => {
               <img 
                 src={euLogo} 
                 alt="EU Logo with documents and stars" 
-                className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto"
+                className="w-20 sm:w-40 md:w-48 lg:w-56 h-auto"
               />
             </div>
           </div>

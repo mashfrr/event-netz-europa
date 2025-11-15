@@ -9,7 +9,7 @@ const Dialog = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Interaktive Workshops & Infostände für Jugendliche und Fachkräfte
           </h2>
-          <div className="prose text-gray-700 leading-relaxed space-y-4">
+          <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
             <p>
               Ob Jugendkongress, Schulworkshop oder Festival: Wir kommen zu euch und sprechen über europäische Themen, die junge Menschen bewegen.
             </p>
@@ -33,7 +33,7 @@ const Dialog = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     Praxisorientiert
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-justify">
                     Unser Fokus liegt auf direkt anwendbarem Wissen und konkreten Beteiligungsmöglichkeiten
                   </p>
                 </div>
@@ -47,7 +47,7 @@ const Dialog = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     Niedrigschwelliger Zugang
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-justify">
                     Unsere Workshops und Infostände sind so konzipiert, dass sie unabhängig von Vorkenntnissen zugänglich sind
                   </p>
                 </div>
@@ -61,7 +61,7 @@ const Dialog = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     Peer-Learning
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-justify">
                     Wir fördern den Erfahrungsaustausch zwischen den Teilnehmenden
                   </p>
                 </div>
@@ -75,7 +75,7 @@ const Dialog = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     Nachhaltige Vernetzung
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-justify">
                     Über unsere Community können die Teilnehmenden vernetzen und gemeinsam weitere Events besuchen
                   </p>
                 </div>
@@ -98,7 +98,7 @@ const Dialog = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     Inklusive Beteiligung
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-justify">
                     Wie können wir einfach zugängliche Bildungs- und Vernetzungsmöglichkeiten im In- und Ausland schaffen.
                   </p>
                 </div>
@@ -112,7 +112,7 @@ const Dialog = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     Lobbyarbeit & Forderungen
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-justify">
                     Was muss sich zum Beispiel ändern, damit öffentliche Verkehrsmittel noch attraktiver werden? Wie können wir Entscheidungsträger*innen aus Politik und Wirtschaft beeinflussen, um Veränderungen vor Ort anzustoßen?
                   </p>
                 </div>
@@ -150,7 +150,7 @@ const Dialog = () => {
                   <p className="text-gray-700 mb-3">
                     Zum Thema <strong>EU-Fahrgastrechte</strong> sind leider viele Mythen und Falschinformationen im Umlauf. Wir klären anhand von alltagsnahen Beispielen auf, unter welchen Voraussetzungen du zusätzliche Ausgaben erstattet bekommst und was du dabei beachten musst. Was viele nicht wissen: Die wichtigsten Fahrgastrechte greifen auch bei vergünstigten Tickets wie dem Deutschlandticket und nicht nur bei Fernreisen.
                   </p>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 text-justify">
                     Außerdem geben wir dir benutzerfreundliche Tools an die Hand, mit denen du zum <strong>Bahn-Profi</strong> wirst und manchmal schneller Bescheid weißt als das Zugpersonal.
                   </p>
                 </div>
@@ -164,7 +164,7 @@ const Dialog = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             An wen richtet sich das Angebot?
           </h2>
-          <div className="prose text-gray-700 leading-relaxed space-y-4">
+          <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
             <p>
               Junge Menschen, die bisher noch keine Berührungspunkte mit Engagement und Beteiligung hatten, Ehrenamtliche aus Jugendorganisationen oder Fachkräfte der Jugendarbeit: Wir haben verschiedene Methoden zur Auswahl und können uns somit der jeweiligen Zielgruppe anpassen.
             </p>
@@ -179,7 +179,7 @@ const Dialog = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Kontakt und Anfragen
           </h2>
-          <div className="prose text-gray-700 leading-relaxed space-y-4">
+          <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
             <p>
               Sie haben Interesse an einem unserer Workshops oder möchten ein maßgeschneidertes Angebot erhalten? Kontaktieren Sie uns unter:
             </p>
