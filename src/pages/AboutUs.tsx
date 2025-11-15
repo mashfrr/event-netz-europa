@@ -276,8 +276,8 @@ const AboutUs = () => {
               </Popover>
             </div>
             <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
-              <li>24 Jahre alt, bundesweiter Projektmanager.</li>
-              <li>Mitgründer des Projekts und verantwortlich für die Gesamtkoordination. Zuständig für die Planung und Abstimmung aller Projektprozesse, die Recherche relevanter Veranstaltungen sowie für den Aufbau und die Pflege von Kooperationen.</li>
+              <li>24 Jahre alt, arbeitet bundesweit als Projektmanager.</li>
+              <li>Mitgründer des Projekts und zuständig für die Projektkoordination, die Recherche von Veranstaltungen und die Betreuung von Kooperationen.</li>
             </ul>
           </div>
 
@@ -349,8 +349,8 @@ const AboutUs = () => {
               </Popover>
             </div>
             <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
-              <li>20 Jahre alt, Student in Leipzig.</li>
-              <li>Seit Januar 2025 verantwortlich für die Betreuung der WhatsApp-Community, die Öffentlichkeitsarbeit sowie die Kommunikation mit Teilnehmenden und Veranstaltenden.</li>
+              <li>20 Jahre alt, studiert in Leipzig.</li>
+              <li>Seit Januar 2025 zuständig für die Betreuung der WhatsApp-Community, die Öffentlichkeitsarbeit sowie die Kommunikation mit Teilnehmenden und Veranstaltenden.</li>
             </ul>
           </div>
 
@@ -402,15 +402,19 @@ const AboutUs = () => {
               </Popover>
             </div>
             <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
-              <li>19 Jahre alt, Abitur in München.</li>
-              <li>Seit Januar 2025 verantwortlich für die IT sowie den Aufbau und die Betreuung der Web-Plattform. Zuständig für die Recherche von Veranstaltungen sowie für die Öffentlichkeitsarbeit.</li>
+              <li>19 Jahre alt, macht Abitur 2026 in München.</li>
+              <li>Seit Januar 2025 zuständig für den Aufbau der Web-Plattform, die Recherche von Veranstaltungen sowie für die Öffentlichkeitsarbeit.</li>
             </ul>
           </div>
 
           {/* Team Member 4 */}
           <div className="text-center">
-            <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
-              <span className="text-gray-500 text-sm">Foto</span>
+            <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+              <img 
+                src="/Amira.jpeg" 
+                alt="Amira Benkhedda" 
+                className="w-full h-full object-cover scale-150"
+              />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Amira Benkhedda</h3>
             <div className="flex items-center justify-center gap-3 mb-3">
@@ -450,9 +454,10 @@ const AboutUs = () => {
                 </PopoverContent>
               </Popover>
             </div>
-            <p className="text-sm text-gray-600">
-              Kurze Beschreibung der Person und ihrer Rolle im Team.
-            </p>
+            <ul className="text-sm text-gray-600 text-left list-disc list-inside space-y-1">
+              <li>19 Jahre alt, macht Abitur 2026 in Rheinland-Pfalz.</li>
+              <li>Seit Januar 2025 zuständig für das Social-Media-Marketing.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -460,99 +465,84 @@ const AboutUs = () => {
       {/* Partners Section */}
       <section className="mb-8 sm:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Unsere Partner</h2>
-        <div className="flex flex-row justify-start items-center gap-4 sm:gap-6 md:gap-8 flex-wrap">
-          {/* Partner 1 - DSEE */}
-          <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
-            <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
-              <img 
-                src="/2023_DSEE_Logo_3zlg_RGB_Basis_580x180.png" 
-                alt="DSEE Logo" 
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            <a 
-              href="https://www.deutsche-stiftung-engagement-und-ehrenamt.de" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
-            >
-              DSEE
-            </a>
-          </div>
-
-          {/* Partner 2 - TEILHABER IM Netzwerk */}
-          <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
-            <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
-              <img 
-                src="/NSB.png" 
-                alt="TEILHABER IM Netzwerk Stiftungen und Bildung Logo" 
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-start">
+          {/* Partner 1 - NSB */}
+          <div className="flex flex-col items-start justify-center">
             <a 
               href="https://www.netzwerk-stiftungen-bildung.de" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-start hover:opacity-80 transition-opacity"
             >
-              Teilhaber im Netzwerk Stiftungen und Bildung
+              <img 
+                src="/NSB.png" 
+                alt="TEILHABER IM Netzwerk Stiftungen und Bildung Logo" 
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain"
+              />
             </a>
           </div>
 
-          {/* Partner 3 - Umsetzungspartner Update Deutschland */}
-          <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
-            <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
+          {/* Partner 2 - DSEE */}
+          <div className="flex flex-col items-center justify-center">
+            <a 
+              href="https://www.deutsche-stiftung-engagement-und-ehrenamt.de" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center hover:opacity-80 transition-opacity"
+            >
               <img 
-                src="/Update.png" 
-                alt="Update Deutschland Logo" 
-                className="max-w-full max-h-full object-contain"
+                src="/2023_DSEE_Logo_3zlg_RGB_Basis_580x180.png" 
+                alt="DSEE Logo" 
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain"
               />
-            </div>
+            </a>
+          </div>
+
+          {/* Partner 3 - NIEDERSACHSEN HÄLT ZUSAMMEN */}
+          <div className="flex flex-col items-center justify-center">
+            <a 
+              href="http://niedersachsen.de/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center hover:opacity-80 transition-opacity"
+            >
+              <img 
+                src="/niedersachen_haelt_zusammen_logo.png" 
+                alt="Niedersachsen hält zusammen Logo" 
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain"
+              />
+            </a>
+          </div>
+
+          {/* Partner 4 - Update Deutschland */}
+          <div className="flex flex-col items-start justify-center md:col-start-1">
             <a 
               href="https://www.update-deutschland.de" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-start hover:opacity-80 transition-opacity"
             >
-              Update Deutschland
-            </a>
-          </div>
-
-          {/* Partner 4 - NIEDERSACHSEN HÄLT ZUSAMMEN */}
-          <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
-            <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
               <img 
-                src="/niedersachen_haelt_zusammen_logo.png" 
-                alt="Niedersachsen hält zusammen Logo" 
-                className="max-w-full max-h-full object-contain"
+                src="/Update.png" 
+                alt="Update Deutschland Logo" 
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain"
               />
-            </div>
-            <a 
-              href="https://www.niedersachsen.de/startseite/politik_staat/landesregierung_ministerien/landesregierung_2013_2017/2013_bis_2017_gute_jahre_fur_das_land/niedersachsen_halt_zusammen/niedersachsen-haelt-zusammen--155274.html" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
-            >
-              Niedersachsen hält zusammen
             </a>
           </div>
 
           {/* Partner 5 - Meet and Code */}
-          <div className="flex flex-col items-center justify-center flex-1 min-w-[200px] max-w-[300px]">
-            <div className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
+            <a 
+              href="https://www.meet-and-code.org/de/de/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center hover:opacity-80 transition-opacity"
+            >
               <img 
                 src="/RGB_Meet_and_Code_Logo@4x.png" 
                 alt="Meet and Code Logo" 
-                className="max-w-full max-h-full object-contain"
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain"
               />
-            </div>
-            <a 
-              href="https://www.meet-and-code.org/at/de/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm sm:text-base font-semibold text-gray-900 mt-2 text-center hover:text-[#41919C] transition-colors cursor-pointer px-2"
-            >
-              Meet and Code
             </a>
           </div>
         </div>
