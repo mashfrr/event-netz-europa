@@ -85,7 +85,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">2020</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Chat-Gruppe mit Veranstaltungstipps entsteht</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -103,7 +103,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">09/2021</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">⚡ Professionalisierung</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -118,7 +118,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">09/2021</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🌟 Marke "Event Netz Europa" entsteht</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -133,7 +133,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">10/2023</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🏛️ Wechsel des Trägervereins</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -148,7 +148,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">2024</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">📈 Wachstum und Präsenz auf Events</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -163,7 +163,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">01/2025</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">👥 Neues Team findet sich zusammen</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -178,7 +178,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">Sommer 2025</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🎯 Skalierung des Projekts</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -193,7 +193,7 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">heute</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
                 <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Weiterentwicklung der Formate und Ausbau der Präsenz auf Events</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl">
@@ -292,25 +292,6 @@ const AboutUs = () => {
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Jakob Steinborn</h3>
             <div className="flex items-center justify-center gap-3 mb-3">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // TODO: Add LinkedIn URL here when available
-                }}
-                className="text-[#0077b5] hover:text-[#005885] transition-colors opacity-50 cursor-not-allowed"
-                aria-label="Jakob Steinborn LinkedIn"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                  fill="currentColor"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
               <Popover>
                 <PopoverTrigger asChild>
                   <button
@@ -411,7 +392,7 @@ const AboutUs = () => {
           <div className="text-center">
             <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
               <img 
-                src="/Amira.jpeg" 
+                src="/amira.jpeg" 
                 alt="Amira Benkhedda" 
                 className="w-full h-full object-cover scale-150"
               />
