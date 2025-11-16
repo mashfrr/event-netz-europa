@@ -181,7 +181,7 @@ const Dialog = () => {
           </h2>
           <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
             <p>
-              Sie haben Interesse an einem unserer Workshops oder möchten ein maßgeschneidertes Angebot erhalten? Kontaktieren Sie uns unter:
+              Du hast Interesse an einem unserer Workshops oder möchtest du ein maßgeschneidertes Angebot erhalten? Kontaktiere uns unter:
             </p>
             <div className="space-y-2">
               <p>
