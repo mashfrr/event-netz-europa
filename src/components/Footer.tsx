@@ -18,7 +18,7 @@ const Footer = () => {
           </Link>
           <Button 
             variant="ghost" 
-            onClick={() => window.open("https://www.vernetzte-gesellschaft.org/datenschutz", "_blank")}
+            onClick={() => window.open("https://netges.org/datenschutz", "_blank")}
             className="text-muted-foreground hover:text-[#0F2D49] focus:outline-none focus:ring-0 hover:bg-transparent text-sm sm:text-base"
           >
             Datenschutz
