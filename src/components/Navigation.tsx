@@ -40,7 +40,7 @@ const Navigation = () => {
       
       {/* Hero Section */}
       <div 
-        className="text-white py-3 md:py-4 rounded-2xl md:rounded-3xl mx-4 md:mx-8 mb-6 md:mb-8 relative overflow-hidden hero-banner-mobile" 
+        className="text-white py-3 md:py-4 lg:py-6 rounded-2xl md:rounded-3xl mx-4 md:mx-8 mb-6 md:mb-8 relative overflow-hidden hero-banner-mobile min-h-[120px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[180px]" 
         style={{ 
           backgroundColor: '#0F2D49'
         }}
@@ -48,17 +48,20 @@ const Navigation = () => {
         <div className="w-full px-3 md:px-6 relative z-10 h-full">
           <div className="flex items-start justify-between h-full flex-row">
             {/* Title - Left aligned */}
-            <div className="flex items-start h-full pt-2 md:pt-4 pl-2 md:pl-4">
+            <div className="flex items-start h-full pt-2 md:pt-4 pl-2 md:pl-4 pb-3 md:pb-4 lg:pb-6">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">Event Netz Europa</h1>
             </div>
             
             {/* EU Logo - Right side */}
-            <div className="relative flex items-start h-full pt-8 md:pt-10 pr-2 md:pr-4">
-              <img 
-                src={euLogo} 
-                alt="EU Logo with documents and stars" 
-                className="w-20 sm:w-40 md:w-48 lg:w-56 h-auto"
-              />
+            <div className="relative flex items-center justify-end h-full pr-2 md:pr-4">
+              <div className="flex items-center justify-center pt-3 md:pt-4 pb-3 md:pb-4 lg:pb-6">
+                <img 
+                  src={euLogo} 
+                  alt="EU Logo with documents and stars" 
+                  className="w-16 sm:w-32 md:w-40 lg:w-48 xl:w-56 h-auto max-w-full object-contain"
+                  style={{ maxHeight: '100%' }}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -166,10 +166,7 @@ const Dialog = () => {
           </h2>
           <div className="prose text-gray-700 leading-relaxed space-y-4 text-justify">
             <p>
-              Junge Menschen, die bisher noch keine Berührungspunkte mit Engagement und Beteiligung hatten, Ehrenamtliche aus Jugendorganisationen oder Fachkräfte der Jugendarbeit: Wir haben verschiedene Methoden zur Auswahl und können uns somit der jeweiligen Zielgruppe anpassen.
-            </p>
-            <p>
-              <strong>Weiterführende Schulen, ab 14 Jahren</strong>
+              Unser Angebot richtet sich an junge Menschen ab ca. 14 Jahren, für die Jugendbeteiligung und Engagement gerade erst richtig interessant werden. Darüberhinaus möchten wir auch eine Plattform für diejenigen sein, die sich bereits ehrenamtlich in Jugendorganisationen oder als Fachkräfte in der Jugendarbeit engagieren. Je nach Zielgruppe können wir auf verschiedene Methoden und zurückgreifen und die Themen an die jeweiligen Anforderungen anpassen.
             </p>
           </div>
         </section>

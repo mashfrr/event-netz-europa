@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Mail, Phone } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 
@@ -18,16 +19,16 @@ const AboutUs = () => {
         <button 
           onClick={handleCommunityClick}
           style={{ backgroundColor: '#41919C' }}
-          className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base"
+          className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base flex-1 max-w-xs"
         >
-          WhatsApp Community
+          Whatsapp-Community
         </button>
         <button 
           onClick={handleChannelClick}
           style={{ backgroundColor: '#41919C' }}
-          className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base"
+          className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base flex-1 max-w-xs"
         >
-          WhatsApp Channel
+          Whatsapp-Channel
         </button>
       </div>
 
@@ -85,8 +86,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">2020</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Chat-Gruppe mit Veranstaltungstipps entsteht</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Von mehreren jungen Menschen, die sich über Veranstaltungen wie die 
@@ -103,8 +104,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">09/2021</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">⚡ Professionalisierung</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Aus der mittlerweile auf mehrere hundert Mitglieder angewachsenen Gruppe findet sich erstmals ein Redaktionsteam zusammen, das mit der Unterstützung einer bundesweit tätigen Stiftung passende Veranstaltungen recherchiert und weitere Social-Media-Kanäle aufbaut.
@@ -118,8 +119,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">09/2021</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🌟 Marke "Event Netz Europa" entsteht</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Parallel zu der bestehenden Veranstaltungstipps-Community entwickeln Jannik und Karl, die mit anderen Engagierten den umgedacht e. V. (auch bekannt als Zentrum für soziale Innovation - kurz "ZFSI") gegründet haben, eine Website mit dem Titel "Event Netz Europa" und die dazugehörige Social-Media-Community. Neben nationalen Angeboten werden hier insbesondere internationale Projekte geteilt.
@@ -133,8 +134,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">10/2023</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🏛️ Wechsel des Trägervereins</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Während der umgedacht e. V. sich mittlerweile mehr auf <a href="https://nein-zur-digitalen-gewalt.de" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Präventionsworkshops an Schulen</a> fokussiert, gründen einige Mitglieder den <a href="https://netges.org" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Verein für die vernetzte Gesellschaft e. V.</a> - abgekürzt "NetGes", um sich auf die strukturelle Unterstützung von Jugendengagement zu fokussieren. Der neu gegründete Verein übernimmt kurz darauf die Communities "Event Netz Europa" und "Veranstaltungstipps" und führt sie in einem Projekt zusammen.
@@ -148,8 +149,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">2024</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">📈 Wachstum und Präsenz auf Events</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Während das Projektteam von NetGes mit personellen Engpässen zu kämpfen hat und die Zahl der geteilten Angebote zeitweise sinkt, wächst das Interesse an dem Projekt und die Mitgliederzahl stetig. In Zusammenarbeit mit verschiedenen Organisationen wie dem Jugendmultiplikatoren-Team für den EU-Jugenddialog beim Deutschen Bundesjugendring wird die Präsenz auf regionalen und nationalen Veranstaltungen verstärkt, um mehr junge Menschen außerhalb der bestehenden Bubble zu erreichen.
@@ -163,8 +164,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">01/2025</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">👥 Neues Team findet sich zusammen</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Auf der Veranstaltung "<a href="https://gennow.de/gesellschaft/change-youth-empowerment-hub/" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Change! Youth Empowerment Hub</a>" in Berlin, die vom <a href="https://gennow.de/" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Projekt "gen now" der Bertelsmann Stiftung</a> in Kooperation mit dem <a href="https://peerleader.org/" target="_blank" rel="noopener noreferrer" className="text-[#41919C] hover:text-[#0F2D49] underline">Peer-Leader-International e. V.</a> organisiert wird, trifft Karl vom NetGes e. V. auf Maria, Amira und Jakob, die bereits überlegt hatten, eine ähnliche Plattform neu aufzubauen. Kurz darauf treffen sie sich digital noch einmal und planen zusammen den Ausbau der Community.
@@ -178,8 +179,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">Sommer 2025</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🎯 Skalierung des Projekts</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Mittlerweile ist die Community auf mehr als 2000 Mitglieder gewachsen. Die Zahl der Angebote steigt immer weiter und zahlreiche Träger schicken ihre Ausschreibungen direkt an das Redaktionsteam, um Teilnehmende für ihre Projekte zu gewinnen.
@@ -193,8 +194,8 @@ const AboutUs = () => {
               <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
                 <div className="text-black font-bold text-xs sm:text-sm">heute</div>
               </div>
-              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0 sm:mr-2 md:mr-4">
-                <div className="bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
+              <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
+                <div className="bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-1 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Weiterentwicklung der Formate und Ausbau der Präsenz auf Events</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-justify">
                     Um die Bekanntheit des Projekts zu stärken, arbeitet das Projektteam an einer stärkeren Präsenz auf Events in Form von eigenen Infoständen und Workshops. Parallel wird an der Website und den verschiedenen Social-Media-Kanälen gefeilt, um diese übersichtlicher und attraktiver zu machen.
@@ -203,6 +204,16 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center mt-8">
+          <Link to="/dialog">
+            <button 
+              style={{ backgroundColor: '#41919C' }}
+              className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base"
+            >
+              Mehr dazu erfahren
+            </button>
+          </Link>
         </div>
       </section>
 
