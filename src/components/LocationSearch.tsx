@@ -121,7 +121,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
 
   const displayText = selectedLocationData 
     ? `${selectedLocationData.name} + ${radius} km` 
-    : 'Ort auswählen';
+    : 'Ort';
 
   return (
     <div className="relative">
@@ -130,7 +130,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
           <Button
             variant="outline"
             className={cn(
-              "w-[200px] md:w-[250px] text-sm text-left justify-start",
+              "w-full sm:w-[140px] md:w-[200px] text-sm text-left justify-start text-black font-normal rounded-lg",
               selectedLocation !== "all" && "border-[#41919C] bg-[#41919C]/10"
             )}
             disabled={disabled}

@@ -7,8 +7,8 @@ const EventInput = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background py-8 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-background py-8">
+      <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8">
         <div className="space-y-8">
           <h1 className="text-2xl font-bold text-gray-900">
             Teile dein Event mit der Community

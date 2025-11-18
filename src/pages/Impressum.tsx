@@ -8,7 +8,7 @@ const Impressum = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8 py-8">
         {/* Back Button */}
         <Button 
           variant="ghost" 

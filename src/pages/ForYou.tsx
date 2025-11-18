@@ -14,7 +14,7 @@ const ForYou = () => {
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8">
         {/* BeReal-style Tab Switcher */}
         <div className="flex justify-center mb-8">
           <div className="bg-muted rounded-full p-1 flex">

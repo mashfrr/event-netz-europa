@@ -63,7 +63,7 @@ const EventDetail = () => {
   }
   return <div className="min-h-screen bg-background">
       {/* Header with Back Button */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pt-6 sm:pt-8">
+      <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8 pt-6 sm:pt-8">
         <span 
           onClick={() => navigate('/events')} 
           className="mb-6 cursor-pointer flex items-center"
@@ -73,7 +73,7 @@ const EventDetail = () => {
         </span>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pb-8 sm:pb-12">
+      <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8 pb-8 sm:pb-12">
         {/* Event Title and Theme */}
         <div className="mb-8">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4">

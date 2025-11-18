@@ -73,7 +73,7 @@ const Events = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8 py-8">
         {/* Page Title */}
         <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 md:mb-12">Events finden</h1>
 
@@ -360,7 +360,7 @@ const Events = () => {
         </div>
 
         {/* Sort */}
-        <div className="flex items-center justify-between mb-6 md:mb-8">
+        <div className="hidden flex items-center justify-between mb-6 md:mb-8">
           <div className="flex items-center gap-2">
             <span className="text-sm text-black">Sortieren nach:</span>
             <Select value={sortBy} onValueChange={setSortBy} disabled>
