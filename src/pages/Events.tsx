@@ -383,20 +383,20 @@ const Events = () => {
             <br />
             Entdecken Sie unsere Angebote bereits jetzt über unsere WhatsApp-Community oder unseren WhatsApp-Kanal.
           </p>
-          <div className="flex flex-row justify-center gap-2 sm:gap-3 md:gap-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-3 md:gap-4">
             <button 
               onClick={handleCommunityClick}
               style={{ backgroundColor: '#41919C' }}
-              className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base"
+              className="text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:flex-1 sm:max-w-xs"
             >
-              WhatsApp Community
+              Whatsapp-Community
             </button>
             <button 
               onClick={handleChannelClick}
               style={{ backgroundColor: '#41919C' }}
-              className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base"
+              className="text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:flex-1 sm:max-w-xs"
             >
-              WhatsApp Channel
+              Whatsapp-Channel
             </button>
           </div>
         </div>
