@@ -15,18 +15,18 @@ const AboutUs = () => {
   return (
     <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8 py-6 sm:py-8">
       {/* WhatsApp Buttons */}
-      <div className="flex flex-row justify-center gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-12">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-3 md:gap-4 mb-8 sm:mb-12 px-4 sm:px-0">
         <button 
           onClick={handleCommunityClick}
           style={{ backgroundColor: '#41919C' }}
-          className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base flex-1 max-w-xs"
+          className="text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:flex-1 sm:max-w-xs"
         >
           Whatsapp-Community
         </button>
         <button 
           onClick={handleChannelClick}
           style={{ backgroundColor: '#41919C' }}
-          className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base flex-1 max-w-xs"
+          className="text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:flex-1 sm:max-w-xs"
         >
           Whatsapp-Channel
         </button>

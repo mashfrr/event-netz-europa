@@ -40,7 +40,7 @@ const Navigation = () => {
       
       {/* Hero Section */}
       <div 
-        className="text-white py-3 md:py-4 lg:py-6 rounded-2xl md:rounded-3xl mb-6 md:mb-8 relative overflow-hidden hero-banner-mobile min-h-[120px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[180px] max-w-[458px] sm:max-w-none mx-auto sm:mx-6 md:mx-8" 
+        className="text-white py-3 md:py-4 lg:py-6 rounded-2xl md:rounded-3xl mb-6 md:mb-8 relative overflow-hidden hero-banner-mobile min-h-[120px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[180px] max-w-[394px] sm:max-w-none mx-auto sm:mx-6 md:mx-8" 
         style={{ 
           backgroundColor: '#0F2D49'
         }}
