@@ -57,18 +57,6 @@ const AboutUs = () => {
       </section>
 
       <section className="mb-8 sm:mb-12">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Unsere Mission</h2>
-        <div className="prose prose-sm sm:prose-base max-w-none text-gray-700 leading-relaxed">
-          <p className="max-w-none">
-            Wir sehen ein Europa, in dem jeder junge Mensch die gleichen Chancen auf Bildung, Engagement und Weiterentwicklung hat. 
-            Viele Jugendliche haben auf dem Veranstaltungsmarkt, sei es in clubs, einem offenen oder, so richtig, andere nicht die 
-            Möglichkeit allein teilzunehmen, sich über Event Netz Europa schaffen wir Transparenz. Zugang sind ein lokales Netzwerk, in dem junge Menschen die Zukunft aktiv 
-            mitgestalten und sich gemeinsam auf ein gemeinsames Ziel hinbewegen.
-          </p>
-        </div>
-      </section>
-
-      <section className="mb-8 sm:mb-12">
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Von einer Chat-Gruppe zur Community mit mehr als 2000 Mitgliedern</h2>
         <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">Die Geschichte hinter Event Netz Europa</p>
 
