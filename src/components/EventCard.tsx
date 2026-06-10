@@ -90,7 +90,7 @@ const EventCard = ({
   };
   return (
     <div 
-      className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 cursor-pointer border border-gray-100"
+      className="interactive-card bg-white rounded-lg overflow-hidden shadow-sm cursor-pointer border border-gray-100"
       onClick={handleClick}
     >
       {/* Content */}

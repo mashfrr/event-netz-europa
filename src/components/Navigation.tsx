@@ -9,7 +9,7 @@ const Navigation = () => {
     { to: "/events", label: "Events finden" },
     { to: "/event-input", label: "Events teilen" },
     { to: "/mitwirken", label: "Mitwirken" },
-    { to: "/dialog", label: "Dialog" },
+    { to: "/dialog", label: "Workshops" },
   ];
 
   return (
@@ -24,10 +24,8 @@ const Navigation = () => {
                 to={to}
                 className={({ isActive }) =>
                   cn(
-                    "text-sm md:text-base lg:text-lg font-medium transition-colors hover:text-primary whitespace-nowrap",
-                    isActive
-                      ? "text-primary"
-                      : "text-black"
+                    "nav-link-animated text-sm md:text-base lg:text-lg font-medium hover:text-primary whitespace-nowrap",
+                    isActive ? "text-primary nav-link-active" : "text-black"
                   )
                 }
               >

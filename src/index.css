@@ -123,6 +123,10 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -137,4 +141,54 @@ All colors MUST be HSL.
   .hero-banner-mobile {
     aspect-ratio: 1 / 0.213 !important;
   }
-}/* Cache buster Sat Sep 20 12:56:12 CEST 2025 */
+}
+
+@layer utilities {
+  .hero-banner-animated {
+    background: linear-gradient(135deg, #0f2d49 0%, #1a4a6e 45%, #0f2d49 100%);
+    background-size: 200% 200%;
+    animation: hero-gradient 10s ease infinite;
+  }
+
+  .interactive-card {
+    @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-hover;
+  }
+
+  .btn-motion {
+    @apply transition-all duration-200 hover:scale-[1.03] hover:shadow-md active:scale-[0.98];
+  }
+
+  .nav-link-animated {
+    @apply relative transition-colors duration-200;
+  }
+
+  .nav-link-animated::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 ease-out;
+  }
+
+  .nav-link-animated:hover::after,
+  .nav-link-animated.nav-link-active::after {
+    @apply w-full;
+  }
+}
+
+@keyframes hero-gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-banner-animated {
+    animation: none;
+  }
+}

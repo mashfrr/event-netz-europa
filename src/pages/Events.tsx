@@ -22,10 +22,6 @@ const Events = () => {
   const [reimbursement, setReimbursement] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("date");
 
-  const handleCommunityClick = () => {
-    window.open("https://chat.whatsapp.com/B73TpR6gGumIGsb0fSRZ0q", "_blank");
-  };
-
   const handleChannelClick = () => {
     window.open("https://whatsapp.com/channel/0029Va8izXXFcow89AjyaH3l", "_blank");
   };
@@ -381,20 +377,13 @@ const Events = () => {
           <p className="prose prose-lg text-gray-700 leading-relaxed max-w-none mb-6">
             Diese Funktion befindet sich noch in der Entwicklung.
             <br />
-            Entdecken Sie unsere Angebote bereits jetzt über unsere WhatsApp-Community oder unseren WhatsApp-Kanal.
+            Entdecken Sie unsere Angebote bereits jetzt über unseren WhatsApp-Kanal.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-3 md:gap-4">
-            <button 
-              onClick={handleCommunityClick}
-              style={{ backgroundColor: '#41919C' }}
-              className="text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:flex-1 sm:max-w-xs"
-            >
-              Whatsapp-Community
-            </button>
+          <div className="flex justify-center">
             <button 
               onClick={handleChannelClick}
               style={{ backgroundColor: '#41919C' }}
-              className="text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium hover:opacity-90 transition-colors text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:flex-1 sm:max-w-xs"
+              className="btn-motion text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:max-w-xs"
             >
               Whatsapp-Channel
             </button>
