@@ -84,7 +84,7 @@ const AboutUs = () => {
               </div>
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
                 <div className="interactive-card bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-4 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🗂️ Professionalisierung</h3>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">📋 Professionalisierung</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-left">
                     Aus der mittlerweile auf mehrere hundert Mitglieder angewachsenen Gruppe findet sich erstmals ein Redaktionsteam zusammen, das mit der Unterstützung einer bundesweit tätigen Stiftung passende Veranstaltungen recherchiert und weitere Social-Media-Kanäle aufbaut.
                   </p>
@@ -99,7 +99,7 @@ const AboutUs = () => {
               </div>
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
                 <div className="interactive-card bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-4 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🗂️ Marke &quot;Event Netz Europa&quot; entsteht</h3>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🇪🇺 Marke &quot;Event Netz Europa&quot; entsteht</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-left">
                     Parallel zu der bestehenden Veranstaltungstipps-Community entwickeln Jannik und Karl, die mit anderen Engagierten den umgedacht e. V. (auch bekannt als Zentrum für soziale Innovation - kurz &quot;ZFSI&quot;) gegründet haben, eine Website mit dem Titel &quot;Event Netz Europa&quot; und die dazugehörige Social-Media-Community. Neben nationalen Angeboten werden hier insbesondere internationale Projekte geteilt.
                   </p>
@@ -154,12 +154,16 @@ const AboutUs = () => {
 
             {/* Skalierung des Projekts */}
             <div className="relative flex items-start">
-              <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
-                <div className="text-black font-bold text-xs sm:text-sm">Sommer 2025</div>
+              <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 min-h-6 sm:min-h-7 md:min-h-8 bg-background px-1 sm:px-2">
+                <div className="text-black font-bold text-[10px] sm:text-xs text-center leading-tight">
+                  Sommer
+                  <br />
+                  2025
+                </div>
               </div>
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
                 <div className="interactive-card bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-4 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">💡 Skalierung des Projekts</h3>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Skalierung des Projekts</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-left">
                     Mittlerweile ist die Community auf mehr als 2000 Mitglieder gewachsen. Die Zahl der Angebote steigt immer weiter und zahlreiche Träger schicken ihre Ausschreibungen direkt an das Redaktionsteam, um Teilnehmende für ihre Projekte zu gewinnen.
                   </p>
@@ -174,7 +178,7 @@ const AboutUs = () => {
               </div>
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
                 <div className="interactive-card bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-4 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">💡 Weiterentwicklung der Formate und Ausbau der Präsenz auf Events</h3>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">📈 Weiterentwicklung der Formate und Ausbau der Präsenz auf Events</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-left">
                     Um die Bekanntheit des Projekts zu stärken, arbeitet das Projektteam an einer stärkeren Präsenz auf Events in Form von eigenen Infoständen und Workshops. Parallel wird an der Website und den verschiedenen Social-Media-Kanälen gefeilt, um diese übersichtlicher und attraktiver zu machen.
                   </p>

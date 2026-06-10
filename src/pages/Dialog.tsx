@@ -202,14 +202,14 @@ const Dialog = () => {
         <AnimatedSection delay={100}>
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Ziele &amp; Wirkung</h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="flex flex-col gap-6">
               {goals.map(({ emoji, text }) => (
                 <div
                   key={text}
                   className="interactive-card bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-3xl shrink-0" aria-hidden>
+                    <span className="text-xl shrink-0" aria-hidden>
                       {emoji}
                     </span>
                     <p className="text-gray-700 text-left leading-relaxed m-0">{text}</p>
@@ -266,7 +266,7 @@ const Dialog = () => {
             <div className="interactive-card bg-white rounded-lg shadow-md p-4 sm:p-5 md:p-6">
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <div className="flex items-start gap-3">
-                  <span className="text-3xl shrink-0" aria-hidden>
+                  <span className="text-xl shrink-0" aria-hidden>
                     💌
                   </span>
                   <p className="m-0">
@@ -279,7 +279,7 @@ const Dialog = () => {
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-3xl shrink-0" aria-hidden>
+                  <span className="text-xl shrink-0" aria-hidden>
                     ☎️
                   </span>
                   <p className="m-0">
@@ -294,7 +294,7 @@ const Dialog = () => {
                   </p>
                 </div>
                 <div className="flex items-start gap-3 pt-2">
-                  <span className="text-3xl shrink-0" aria-hidden>
+                  <span className="text-xl shrink-0" aria-hidden>
                     📍
                   </span>
                   <div>
