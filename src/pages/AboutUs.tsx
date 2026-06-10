@@ -11,20 +11,7 @@ const AboutUs = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8 py-6 sm:py-8">
-      {/* WhatsApp Buttons */}
       <AnimatedSection>
-        <div className="flex justify-center mb-8 sm:mb-12 px-4 sm:px-0">
-          <button 
-            onClick={handleChannelClick}
-            style={{ backgroundColor: '#41919C' }}
-            className="btn-motion text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:max-w-xs"
-          >
-            Whatsapp-Channel
-          </button>
-        </div>
-      </AnimatedSection>
-
-      <AnimatedSection delay={80}>
       <section className="mb-8 sm:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Über uns</h2>
         <div className="prose prose-sm sm:prose-base max-w-none text-gray-700 leading-relaxed space-y-3 sm:space-y-4">
@@ -47,12 +34,21 @@ const AboutUs = () => {
             {' '}besuchen.
           </p>
         </div>
+        <div className="flex justify-center mt-6 sm:mt-8 px-4 sm:px-0">
+          <button 
+            onClick={handleChannelClick}
+            style={{ backgroundColor: '#41919C' }}
+            className="btn-motion text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:max-w-xs"
+          >
+            Whatsapp-Channel
+          </button>
+        </div>
       </section>
       </AnimatedSection>
 
       <AnimatedSection delay={120}>
       <section className="mb-8 sm:mb-12">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Von einer Chat-Gruppe zur Community mit mehr als 2000 Mitgliedern</h2>
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Von einer Chat-Gruppe zur Community mit mehr als 8000 Mitgliedern</h2>
         <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">Die Geschichte hinter Event Netz Europa</p>
 
         {/* Roadmap Container */}
@@ -154,18 +150,14 @@ const AboutUs = () => {
 
             {/* Skalierung des Projekts */}
             <div className="relative flex items-start">
-              <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 min-h-6 sm:min-h-7 md:min-h-8 bg-background px-1 sm:px-2">
-                <div className="text-black font-bold text-[10px] sm:text-xs text-center leading-tight">
-                  Sommer
-                  <br />
-                  2025
-                </div>
+              <div className="relative z-10 flex items-center justify-center w-12 sm:w-14 md:w-16 h-6 sm:h-7 md:h-8 bg-background px-1 sm:px-2">
+                <div className="text-black font-bold text-xs sm:text-sm">08/2025</div>
               </div>
               <div className="ml-4 sm:ml-6 md:ml-8 flex-1 mr-0">
                 <div className="interactive-card bg-white rounded-lg shadow-md pl-4 sm:pl-5 md:pl-6 pr-4 sm:pr-2 md:pr-3 py-4 sm:py-5 md:py-6">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3">🚀 Skalierung des Projekts</h3>
                   <p className="text-black leading-relaxed text-sm sm:text-base max-w-none sm:max-w-3xl text-left">
-                    Mittlerweile ist die Community auf mehr als 2000 Mitglieder gewachsen. Die Zahl der Angebote steigt immer weiter und zahlreiche Träger schicken ihre Ausschreibungen direkt an das Redaktionsteam, um Teilnehmende für ihre Projekte zu gewinnen.
+                    Mittlerweile ist die Community auf mehr als 8000 Mitglieder gewachsen. Die Zahl der Angebote steigt immer weiter und zahlreiche Träger schicken ihre Ausschreibungen direkt an das Redaktionsteam, um Teilnehmende für ihre Projekte zu gewinnen.
                   </p>
                 </div>
               </div>

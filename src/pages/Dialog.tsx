@@ -105,7 +105,7 @@ const faqItems = [
           Jugendbereich zu verbessern und uns für inklusivere Zugänge zu Veranstaltungen einzusetzen, indem wir{' '}
           <strong>Angebote diverser gemeinnütziger Träger</strong> aus ganz Europa kritisch prüfen und übersichtlich online
           aufbereiten. Unsere Community ist seit der Gründung im Jahr 2021 stark gewachsen und umfasst mittlerweile{' '}
-          <strong>mehr als 7000 junge Menschen</strong> aus dem deutschsprachigen Raum.
+          <strong>mehr als 8000 junge Menschen</strong> aus dem deutschsprachigen Raum.
         </p>
         <p className="mb-3">
           Unser Kernteam besteht aktuell aus vier jungen Menschen, von denen zwei gerade ihr Abitur abschließen und zwei im
