@@ -9,6 +9,10 @@ const AboutUs = () => {
     window.open("https://whatsapp.com/channel/0029Va8izXXFcow89AjyaH3l", "_blank");
   };
 
+  const handleSignalClick = () => {
+    window.open("https://signal.group/#CjQKICPVbEOYXpZLGGm-3YI1wNgbxT72IKhdQ_y8wfmI5-ryEhCvEOk90k0vKxOn3x4WKFHT", "_blank");
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-8 sm:px-6 md:px-8 py-6 sm:py-8">
       <AnimatedSection>
@@ -34,13 +38,20 @@ const AboutUs = () => {
             {' '}besuchen.
           </p>
         </div>
-        <div className="flex justify-center mt-6 sm:mt-8 px-4 sm:px-0">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6 sm:mt-8 px-4 sm:px-0">
           <button 
             onClick={handleChannelClick}
             style={{ backgroundColor: '#41919C' }}
-            className="btn-motion text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base w-[280px] sm:w-auto mx-auto sm:mx-0 sm:max-w-xs"
+            className="btn-motion text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base w-[280px] sm:w-auto sm:max-w-xs"
           >
             Whatsapp-Channel
+          </button>
+          <button 
+            onClick={handleSignalClick}
+            style={{ backgroundColor: '#41919C' }}
+            className="btn-motion text-white px-4 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base w-[280px] sm:w-auto sm:max-w-xs"
+          >
+            Signal-Gruppe
           </button>
         </div>
       </section>
